@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div>
+      <h1>score</h1>
+      <h1 class="score">100</h1>
+    </div>
+<div>
+    <div class="antilop" style="background-image: url(Antilop.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute;">
+    </div>
+    <div class="begemot" style="background-image: url(begemot.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 300px; margin-top:500px;">
+    </div>
+    <div class="nosorog" style="background-image: url(nosorog.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 700px; margin-top:200px;">
+    </div>
+     <div class="elephant" style="background-image: url(elephant.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 1100px; margin-top:100px;">
+    </div>
+    <div class="giena" style="background-image: url(giena.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 380px; margin-top:50px;">
+    </div>
+    <div class="jiraf" style="background-image: url(jiraf.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 700px; margin-top:500px;">
+    </div>
+    <div class="zebra" style="background-image: url(zebra.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 0px; margin-top:290px;">
+    </div>
+    <div class="korova" style="background-image: url(korova.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 1100px; margin-top:400px;">
+    </div>
+    <div class="ask" style="position: absolute; margin-left: 500px; margin-top: 250px">
+      <h1 class="">где зебРРРа?</h1>
+    </div>
+    <div class="right"> 
+      <h1>красава цьмок</h1>
+    </div>
+</div>
+      
+      <script type="text/javascript">
+        let point = 100;
+        let timer = function(){
+          document.querySelector(".antilop").style.background = "black"
+          document.querySelector(".begemot").style.background = "black"
+          document.querySelector(".jiraf").style.background = "black"
+          document.querySelector(".giena").style.background = "black"
+          document.querySelector(".nosorog").style.background = "black"
+          document.querySelector(".elephant").style.background = "black"
+          document.querySelector(".zebra").style.background = "black"
+          document.querySelector(".korova").style.background = "black"
+        }
+        setTimeout(timer, 2000);
+          document.querySelector(".antilop").onclick = function(){
+              document.querySelector(".antilop").style.backgroundImage = "url(antilop.jpg)"
+              document.querySelector(".antilop").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".score").innerHTML = point
+
+          }
+          document.querySelector(".begemot").onclick = function(){
+              document.querySelector(".begemot").style.backgroundImage = "url(begemot.jpg)"
+              document.querySelector(".begemot").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".score").innerHTML = point
+          }
+          document.querySelector(".zebra").onclick = function(){
+              document.querySelector(".zebra").style.backgroundImage = "url(zebra.jpg)"
+              document.querySelector(".zebra").style.backgroundSize = "100% 100%"
+              document.querySelector(".ask").style.display = "none"
+              document.querySelector(".right").style.display = "block"
+              point = point + 100
+              document.querySelector(".score").innerHTML = point
+
+
+              document.querySelector(".antilop").style.backgroundImage = "url(antilop.jpg)"
+              document.querySelector(".antilop").style.backgroundSize = "100% 100%"
+              document.querySelector(".begemot").style.backgroundImage = "url(begemot.jpg)"
+              document.querySelector(".begemot").style.backgroundSize = "100% 100%"
+              document.querySelector(".jiraf").style.backgroundImage = "url(jiraf.jpg)"
+              document.querySelector(".jiraf").style.backgroundSize = "100% 100%"
+              document.querySelector(".giena").style.backgroundImage = "url(giena.jpg)"
+              document.querySelector(".giena").style.backgroundSize = "100% 100%"
+              document.querySelector(".nosorog").style.backgroundImage = "url(nosorog.jpg)"
+              document.querySelector(".nosorog").style.backgroundSize = "100% 100%"
+              document.querySelector(".elephant").style.backgroundImage = "url(elephant.jpg)"
+              document.querySelector(".elephant").style.backgroundSize = "100% 100%"
+              document.querySelector(".korova").style.backgroundImage = "url(korova.jpg)"
+              document.querySelector(".korova").style.backgroundSize = "100% 100%"
+
+
+
+          }
+          document.querySelector(".jiraf").onclick = function(){
+              document.querySelector(".jiraf").style.backgroundImage = "url(jiraf.jpg)"
+              document.querySelector(".jiraf").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".score").innerHTML = point
+
+          }
+          document.querySelector(".giena").onclick = function(){
+              document.querySelector(".giena").style.backgroundImage = "url(giena.jpg)"
+              document.querySelector(".giena").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".score").innerHTML = point
+          }
+          document.querySelector(".nosorog").onclick = function(){
+              document.querySelector(".nosorog").style.backgroundImage = "url(nosorog.jpg)"
+              document.querySelector(".nosorog").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".score").innerHTML = point
+          }
+          document.querySelector(".elephant").onclick = function(){
+              document.querySelector(".elephant").style.backgroundImage = "url(elephant.jpg)"
+              document.querySelector(".elephant").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".score").innerHTML = point
+          }
+
+          document.querySelector(".korova").onclick = function(){
+              document.querySelector(".korova").style.backgroundImage = "url(korova.jpg)"
+              document.querySelector(".korova").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".score").innerHTML = point
+          }
+
+
+
+
+
+
+
+        
+      </script>
+    
+  </body>
+</html>
